@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Казіношка</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="section">
+      <div class="main">
+        <div class="buttons">
+          <button class="btn">SND</button>
+          <button class="btn">SET</button>
+          <button class="btn">SIM</button>
+        </div>
+
+        <img id="logo" src="images/logo.jpg" alt="logo" />
+
+        <div class="slotik">
+          <div class="slot-machine">
+            <div id="koza" class="reel"><div><image src="images/symb_mid_1.png"></div></div>
+            <div id="k" class="reel"><div><image src="images/symbol_low_k.png"></image></div></div>
+            <div id="chiken" class="reel"><div><image src="images/symb_mid_2.png"></image></div></div>
+            <div id="a" class="reel"><div><image src="images/symbol_low_a.png"></image></div></div>
+            <div id="lis" class="reel"><div><image src="images/symb_high.png"></image></div></div>
+            <div id="hryh" class="reel"><div><image src="images/symb_mid_3.png"></image></div></div>
+            <div id="ovza" class="reel"><div><image src="images/symb_mid_4.png"></image></div></div>
+            <div class="reel"><div><image id="bonus" src="images/symb_bonusgame.png"></image></div></div>
+            <div id="q" class="reel"><div><image src="images/symbol_low_q.png"></image></div></div>
+          </div>
+        </div>
+
+        <div class="system">
+        <div class="balance">
+          <div id="coins"></div>
+          <button id="minus" class="plus-" onclick="minus()">-</button>
+          <div id="bet"></div>
+          <button id="plus" class="plus-" onclick="plus()">+</button>
+        </div>
+        <button id="button" onclick="spin()">Spin</button>
+      </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+  </body>
+</html>
